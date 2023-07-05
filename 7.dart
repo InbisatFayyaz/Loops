@@ -1,24 +1,16 @@
-/*Implement a code that finds the largest element in a list using a for
-loop.
+/*Write a program that prints the multiplication table of a given number
+using a for loop.
 Example:
-Input: [3, 9, 1, 6, 4, 2, 8, 5, 7]
-Output: Largest element:*/
-
+Input: 5
+Output:
+5 x 1 = 5*/
 import 'dart:io';
 
 void main() {
-  print(" Enter numbers separated by commas:");
-  List input = stdin.readLineSync()!.split('');
-  //List<int> numbers = input.map(int.parse).toList();
-  List<int> numbers = [];
-  // for (int i = 0; i < input.length; i++) {
-  int largest = numbers[0];
-  for (int i = 1; i < numbers.length; i++) {
-    if (i > largest) {
-      largest = i;
-      //var largestNumber = i;
-      // print('$i');
-      print("the largest number is $largest");
-    }
+  print("Enter a number:");
+  var number = int.parse(stdin.readLineSync()!);
+  for (var a = 1; a <= 10; a++) {
+    var ans = number * a;
+    print("$number x $a = ${number * a}");
   }
 }
